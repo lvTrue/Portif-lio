@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: white;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Oswald", sans-serif;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 75%;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+}
+li {
+  border-radius: 15px;
+  padding: 8px;
+}
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 40%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+}
+.title h1:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.title p:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.title img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.img_fundo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.img_icons {
+  border-radius: 15px;
+  position: absolute;
+  top: 35%;
+  left: 12%;
+  width: 500px;
+  height: 300px;
+}
+.img_fundo2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+.skills {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  width: 80%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+}
+#skills {
+  position: absolute;
+  top: 100%;
+}
+.skills h2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.skills p:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.img_skills {
+  border-radius: 15px;
+  position: absolute;
+  left: 3%;
+  top: 40%;
+}
+.img_skills img {
+  width: 130px;
+  margin-right: 94px;
+}
+.img_skills img:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s;
+  filter: brightness(1.2);
+}
+.img_fundo3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 200%;
+  left: 0;
+  z-index: 1;
+}
+.projetos {
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  width: 80%;
+  height: 62%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+}
+.projetos {
+  position: absolute;
+  top: 250%;
+  left: 70%;
+  width: 50%;
+}
+#projetos {
+  position: absolute;
+  top: 200%;
+}
+.projetos img {
+  border-radius: 15px;
+  position: absolute;
+  top: 31%;
+  right: 12%;
+  width: 600px;
+  height: 300px;
+}
+.projetos img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  filter: brightness(1.2);
+}
+.projetos h3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.projetos p:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.contato {
+  position: absolute;
+  top: 300%;
+  width: 100%;
+  height: 20%;
+  background-color: black;
+}
+#contato {
+  position: absolute;
+  top: 300%;
+}
+.caminho_projeto {
+  position: absolute;
+  top: 88%;
+  left: 40%;
+}
+

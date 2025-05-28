@@ -1,0 +1,132 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+li {
+  border-radius: 15px;
+  padding: 8px;
+}
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.title,
+.skills,
+.projetos {
+  position: relative;
+  width: 90%;
+  margin: 100px auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+  z-index: 2;
+}
+.title h1:hover,
+.title p:hover,
+.skills h2:hover,
+.skills p:hover,
+.projetos h3:hover,
+.projetos p:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.img_fundo,
+.img_fundo2,
+.img_fundo3 {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.img_icons,
+.projetos img,
+.img_skills {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+}
+.img_skills img {
+  width: 100px;
+  margin: 10px;
+}
+.img_skills img:hover,
+.projetos img:hover {
+  transform: translateY(-10px) scale(1.05);
+  transition: transform 0.3s;
+  filter: brightness(1.2);
+}
+.contato {
+  width: 100%;
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .title,
+  .skills,
+  .projetos {
+    width: 95%;
+    margin: 60px auto;
+  }
+
+  .img_skills img {
+    width: 80px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .img_skills img {
+    width: 60px;
+  }
+
+  .title h1,
+  .skills h2,
+  .projetos h3 {
+    font-size: 1.5rem;
+  }
+}
